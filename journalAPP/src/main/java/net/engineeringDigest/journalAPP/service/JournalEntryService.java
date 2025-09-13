@@ -26,7 +26,7 @@ public class JournalEntryService {
         User user= userEntryService.findByUserName(userName);
         JournalEntry saved= journalEntryRepo.save(journalEntry);
         user.getJournalEntries().add(saved);
-        user.setUserName(null);
+
         userEntryService.saveEntry(user);
     }catch(Exception e){
         System.out.println(e);

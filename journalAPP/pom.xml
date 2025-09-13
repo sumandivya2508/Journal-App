@@ -33,11 +33,12 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
-        <!-- Spring Security (no version needed, managed by parent) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+            <version>3.5.5</version>
         </dependency>
+
 
         <!-- Lombok -->
         <dependency>
